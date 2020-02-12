@@ -2,6 +2,7 @@ import React from "react";
 import { IParticleVortexShowcaseView } from "./IParticleVortexShowcaseView";
 import { ParticleVortex } from "particalizor-3000";
 import { Styled } from "../styled";
+import ContainerDimensions from "react-container-dimensions";
 
 const ParticleVortexShowcaseView: React.FC<IParticleVortexShowcaseView> = ({
   particleNumberValue,
@@ -14,15 +15,19 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexShowcaseView> = ({
 }) => {
   return (
     <Styled.ShowcaseComponentContainer>
-      <ParticleVortex
-        imageWidth={imageWidth}
-        imageHeight={imageHeight}
-        vortexNumber={vortexNumberValue}
-        particleTraceWidth={particleTraceWidthValue}
-        particleNumber={particleNumberValue}
-        particleLifeTime={particleLifeTimeValue}
-        backgroundColor={backgroundColor}
-      />
+      <ContainerDimensions>
+        {({ height, width }) => (
+          <ParticleVortex
+            imageWidth={width}
+            imageHeight={height}
+            vortexNumber={vortexNumberValue}
+            particleTraceWidth={particleTraceWidthValue}
+            particleNumber={particleNumberValue}
+            particleLifeTime={particleLifeTimeValue}
+            backgroundColor={backgroundColor}
+          />
+        )}
+      </ContainerDimensions>
     </Styled.ShowcaseComponentContainer>
   );
 };
