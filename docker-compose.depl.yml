@@ -1,0 +1,15 @@
+version: '3.2'
+services:
+  particalizor-showcase-react:
+    image: alagiz/particalizor-showcase
+    command: nginx -g "daemon off;"
+    deploy:
+      resources:
+        limits:
+          cpus: '0.5'
+          memory: 150M
+        reservations:
+          cpus: '0.1'
+          memory: 10M
+    ports:
+      - "8080:80"
