@@ -1,0 +1,35 @@
+language: node_js
+node_js:
+  - "stable"
+cache:
+  directories:
+    - node_modules
+services:
+  - docker
+script:
+  - yarn install &&
+    yarn build &&
+    yarn lint &&
+    yarn test &&
+    if [ "$TRAVIS_BRANCH" == "master" ]; then
+      docker login -u="$DOCKER_USERNAME" -p="$DOCKER_PASSWORD";
+      docker build . -t $IMAGE_NAME;
+      docker tag $IMAGE_NAME $DOCKER_USERNAME/$DOCKER_REPOSITORY;
+      docker push $DOCKER_USERNAME/$DOCKER_REPOSITORY;
+      DOCKER_PULL_COMMAND="docker pull $DOCKER_USERNAME/$DOCKER_REPOSITORY:$DOCKER_IMAGE_TAG"
+      DOCKER_SERVICE_UPDATE_COMMAND="docker service update --force $DOCKER_SWARM_SERVICE_NAME --image $DOCKER_USERNAME/$DOCKER_REPOSITORY:$DOCKER_IMAGE_TAG";
+      DOCKER_CLEANUP_COMMAND="docker system prune -af && docker volume prune -f";
+      RESULTING_COMMAND="$DOCKER_PULL_COMMAND && $DOCKER_SERVICE_UPDATE_COMMAND && $DOCKER_CLEANUP_COMMAND";
+      pip install --upgrade --user awscli;
+      aws configure set aws_access_key_id $AWS_ACCESS_KEY;
+      aws configure set aws_secret_access_key $AWS_SECRET_KEY;
+      aws configure set default.region $DEPLOYMENT_REGION;
+      aws configure set metadata_service_timeout 1200;
+      aws configure set metadata_service_num_attempts 3;
+      aws configure list;
+      aws ssm describe-instance-information --output text;
+      aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids $INSTANCE_ID --parameters '{"commands":['\""$RESULTING_COMMAND"\"'],"executionTimeout":["3600"]}' --timeout-seconds 600 --region $DEPLOYMENT_REGION;
+    fi
+#TODO: concatenating strings as in --parameters above introduces vulnerability of possible command injection, it needs to change
+after_script:
+  - COVERALLS_REPO_TOKEN=$coveralls_repo_token npm run coveralls

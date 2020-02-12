@@ -1,0 +1,9 @@
+version: '3.2'
+services:
+  particalizor-showcase-react:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: nginx -g "daemon off;"
+    ports:
+      - "8080:80"
