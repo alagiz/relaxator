@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import ParticleVortexShowcaseView from "../view/ParticleVortexShowcaseView";
+import { IParticleVortexShowcase } from "./IParticleVortexShowcase";
 
-const ParticleVortexShowcase: React.FC = ({}) => {
+const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
+  imageHeight,
+  imageWidth
+}) => {
   const [
     selectedParticleNumberValue,
     setSelectedParticleNumberValue
-  ] = useState<number>(30);
+  ] = useState<number>(70);
   const [
     selectedParticleTraceWidthValue,
     setSelectedParticleTraceWidthValue
@@ -51,8 +55,8 @@ const ParticleVortexShowcase: React.FC = ({}) => {
       particleTraceWidthValue={selectedParticleTraceWidthValue}
       vortexNumberValue={selectedVortexNumberValue}
       backgroundColor={selectedBackgroundColor}
-      imageWidth={selectedImageWidth}
-      imageHeight={selectedImageHeight}
+      imageWidth={imageWidth}
+      imageHeight={imageHeight}
     />
   );
 };
