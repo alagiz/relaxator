@@ -20,7 +20,7 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
   ] = useState<number>(1100);
   const [selectedVortexNumberValue, setSelectedVortexNumberValue] = useState<
     number
-  >(3);
+  >(5);
   const [selectedImageHeight, setSelectedImageHeight] = useState<number>(500);
   const [selectedImageWidth, setSelectedImageWidth] = useState<number>(900);
   const [selectedBackgroundColor, setSelectedBackgroundColor] = useState<
@@ -55,8 +55,6 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
       particleTraceWidthValue={selectedParticleTraceWidthValue}
       vortexNumberValue={selectedVortexNumberValue}
       backgroundColor={selectedBackgroundColor}
-      imageWidth={imageWidth}
-      imageHeight={imageHeight}
     />
   );
 };

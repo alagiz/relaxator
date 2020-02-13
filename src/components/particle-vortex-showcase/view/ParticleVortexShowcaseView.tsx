@@ -8,8 +8,6 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexShowcaseView> = ({
   particleNumberValue,
   particleTraceWidthValue,
   particleLifeTimeValue,
-  imageWidth,
-  imageHeight,
   backgroundColor,
   vortexNumberValue
 }) => {
