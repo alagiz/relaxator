@@ -3,7 +3,7 @@ import { IAppView } from "./IAppView";
 import { NumberParam, StringParam, useQueryParam } from "use-query-params";
 import ParticleVortexShowcase from "../../particle-vortex-showcase/container/ParticleVortexShowcase";
 
-const AppView: React.FC<IAppView> = ({}) => {
+const AppView: React.FC<IAppView> = () => {
   const [vortexNumber] = useQueryParam("vortex-number", NumberParam);
   const [particleNumber] = useQueryParam("particle-number", NumberParam);
   const [particleTraceWidth] = useQueryParam(
