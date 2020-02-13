@@ -3,7 +3,7 @@ import { IAppView } from "./IAppView";
 import ParticleVortexShowcase from "../../particle-vortex-showcase/container/ParticleVortexShowcase";
 
 const AppView: React.FC<IAppView> = ({}) => {
-  return <ParticleVortexShowcase imageHeight={100} imageWidth={80} />;
+  return <ParticleVortexShowcase />;
 };
 
 export default AppView;

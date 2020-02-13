@@ -1,6 +1,6 @@
 export interface IParticleVortexShowcase {
-  imageWidth: number;
-  imageHeight: number;
+  // imageWidth: number;
+  // imageHeight: number;
   // particleNumberValue: number;
   // particleLifeTimeValue: number;
   // particleTraceWidthValue: number;

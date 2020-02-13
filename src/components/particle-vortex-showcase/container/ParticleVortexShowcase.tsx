@@ -2,10 +2,7 @@ import React, { useState } from "react";
 import ParticleVortexShowcaseView from "../view/ParticleVortexShowcaseView";
 import { IParticleVortexShowcase } from "./IParticleVortexShowcase";
 
-const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
-  imageHeight,
-  imageWidth
-}) => {
+const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({}) => {
   const [
     selectedParticleNumberValue,
     setSelectedParticleNumberValue
@@ -21,8 +18,6 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
   const [selectedVortexNumberValue, setSelectedVortexNumberValue] = useState<
     number
   >(5);
-  const [selectedImageHeight, setSelectedImageHeight] = useState<number>(500);
-  const [selectedImageWidth, setSelectedImageWidth] = useState<number>(900);
   const [selectedBackgroundColor, setSelectedBackgroundColor] = useState<
     string
   >("#33344c");
@@ -38,12 +33,6 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
 
   const onVortexNumberChange = (value: number) =>
     setSelectedVortexNumberValue(value as number);
-
-  const onImageWidthChange = (value: number) =>
-    setSelectedImageWidth(value as number);
-
-  const onImageHeightChange = (value: number) =>
-    setSelectedImageHeight(value as number);
 
   const onBackgroundColorChange = (value: string) =>
     setSelectedBackgroundColor(value as string);
