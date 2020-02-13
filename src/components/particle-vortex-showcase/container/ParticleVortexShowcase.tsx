@@ -1,48 +1,33 @@
-import React, { useState } from "react";
+import React from "react";
 import ParticleVortexShowcaseView from "../view/ParticleVortexShowcaseView";
 import { IParticleVortexShowcase } from "./IParticleVortexShowcase";
+import { isNil } from "ramda";
 
-const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({}) => {
-  const [
-    selectedParticleNumberValue,
-    setSelectedParticleNumberValue
-  ] = useState<number>(70);
-  const [
-    selectedParticleTraceWidthValue,
-    setSelectedParticleTraceWidthValue
-  ] = useState<number>(600);
-  const [
-    selectedParticleLifeTimeValue,
-    setSelectedParticleLifeTimeValue
-  ] = useState<number>(1100);
-  const [selectedVortexNumberValue, setSelectedVortexNumberValue] = useState<
-    number
-  >(5);
-  const [selectedBackgroundColor, setSelectedBackgroundColor] = useState<
-    string
-  >("#33344c");
-
-  const onChange = (value: number) =>
-    setSelectedParticleNumberValue(value as number);
-
-  const onTraceWidthChange = (value: number) =>
-    setSelectedParticleTraceWidthValue(value as number);
-
-  const onLifeTimeChange = (value: number) =>
-    setSelectedParticleLifeTimeValue(value as number);
-
-  const onVortexNumberChange = (value: number) =>
-    setSelectedVortexNumberValue(value as number);
-
-  const onBackgroundColorChange = (value: string) =>
-    setSelectedBackgroundColor(value as string);
+const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
+  particleNumber,
+  particleLifeTime,
+  particleTraceWidth,
+  vortexNumber,
+  backgroundColor
+}) => {
+  const selectedParticleNumber = isNil(particleNumber) ? 70 : particleNumber;
+  const selectedParticleTraceWidth = isNil(particleTraceWidth)
+    ? 600
+    : particleTraceWidth;
+  const selectedParticleLifeTime = isNil(particleLifeTime)
+    ? 1100
+    : particleLifeTime;
+  const selectedVortexNumber = isNil(vortexNumber) ? 5 : vortexNumber;
+  const selectedBackgroundColor = isNil(backgroundColor)
+    ? "#33344c"
+    : backgroundColor;
 
   return (
     <ParticleVortexShowcaseView
-      particleLifeTimeValue={selectedParticleLifeTimeValue}
-      particleNumberValue={selectedParticleNumberValue}
-      particleTraceWidthValue={selectedParticleTraceWidthValue}
-      vortexNumberValue={selectedVortexNumberValue}
+      particleLifeTimeValue={selectedParticleLifeTime}
+      particleNumberValue={selectedParticleNumber}
+      particleTraceWidthValue={selectedParticleTraceWidth}
+      vortexNumberValue={selectedVortexNumber}
       backgroundColor={selectedBackgroundColor}
     />
   );
