@@ -15,6 +15,7 @@
     "@types/react-dom": "^16.9.0",
     "@types/styled-components": "^4.4.3",
     "babel-plugin-styled-components": "^1.10.6",
+    "customize-cra": "^0.9.1",
     "enzyme": "^3.10.0",
     "enzyme-adapter-react-16": "^1.14.0",
     "enzyme-to-json": "^3.4.0",
