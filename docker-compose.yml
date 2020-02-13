@@ -1,6 +1,6 @@
 version: '3.2'
 services:
-  particalizor-showcase-react:
+  particalizor-3000-vortex:
     build:
       context: .
       dockerfile: Dockerfile
