@@ -10,8 +10,6 @@ describe("Given a ParticleVortexShowcaseView", () => {
           particleTraceWidthValue={1}
           particleNumberValue={1}
           particleLifeTimeValue={1}
-          imageHeight={100}
-          imageWidth={100}
           backgroundColor={"red"}
           vortexNumberValue={3}
         />
