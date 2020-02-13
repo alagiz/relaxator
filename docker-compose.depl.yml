@@ -1,7 +1,7 @@
 version: '3.2'
 services:
-  particalizor-showcase-react:
-    image: alagiz/particalizor-showcase
+  particalizor-3000-vortex:
+    image: alagiz/particalizor-3000-vortex
     command: nginx -g "daemon off;"
     deploy:
       resources:
