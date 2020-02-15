@@ -1,13 +1,13 @@
 import React from "react";
 import { mount, shallow } from "enzyme";
-import ParticleVortexShowcase from "./ParticleVortexShowcase";
-import ParticleVortexShowcaseView from "../view/ParticleVortexShowcaseView";
+import ParticleVortex from "./ParticleVortex";
+import ParticleVortexView from "../view/ParticleVortexView";
 
-describe("Given a ParticleVortexShowcase", () => {
+describe("Given a ParticleVortex", () => {
   describe("when rendering", () => {
     it("should match snapshot", () => {
       const component = shallow(
-        <ParticleVortexShowcase
+        <ParticleVortex
           backgroundColor={""}
           particleTraceWidth={1}
           particleNumber={1}
@@ -18,9 +18,9 @@ describe("Given a ParticleVortexShowcase", () => {
 
       expect(component).toMatchSnapshot();
     });
-    it("should render ParticleVortexShowcaseView", () => {
+    it("should render ParticleVortexView", () => {
       const component = mount(
-        <ParticleVortexShowcase
+        <ParticleVortex
           vortexNumber={1}
           particleLifeTime={1}
           particleNumber={1}
@@ -29,7 +29,7 @@ describe("Given a ParticleVortexShowcase", () => {
         />
       );
 
-      expect(component.find(ParticleVortexShowcaseView).length).toBe(1);
+      expect(component.find(ParticleVortexView).length).toBe(1);
     });
   });
 });

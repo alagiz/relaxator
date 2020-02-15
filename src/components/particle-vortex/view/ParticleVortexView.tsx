@@ -1,10 +1,10 @@
 import React from "react";
-import { IParticleVortexShowcaseView } from "./IParticleVortexShowcaseView";
+import { IParticleVortexView } from "./IParticleVortexView";
 import { ParticleVortex } from "particalizor-3000";
 import { Styled } from "../styled";
 import ContainerDimensions from "react-container-dimensions";
 
-const ParticleVortexShowcaseView: React.FC<IParticleVortexShowcaseView> = ({
+const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   particleNumberValue,
   particleTraceWidthValue,
   particleLifeTimeValue,

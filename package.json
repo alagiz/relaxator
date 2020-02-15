@@ -1,5 +1,6 @@
 {
-  "name": "particalizor-3000-vortex",
+  "name": "relaxator",
+  "homepage": "/relaxator",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
