@@ -6,8 +6,6 @@ code {
 body {
   display: flex;
   flex-direction: column;
-  background: #33344c !important;
-  color: white !important;
   width: 100vw;
   height: 100vh;
   margin: 0;
