@@ -1,9 +1,9 @@
 import React from "react";
-import ParticleVortexShowcaseView from "../view/ParticleVortexShowcaseView";
-import { IParticleVortexShowcase } from "./IParticleVortexShowcase";
+import ParticleVortexView from "../view/ParticleVortexView";
+import { IParticleVortex } from "./IParticleVortex";
 import { isNil } from "ramda";
 
-const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
+const ParticleVortex: React.FC<IParticleVortex> = ({
   particleNumber,
   particleLifeTime,
   particleTraceWidth,
@@ -23,7 +23,7 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
     : backgroundColor;
 
   return (
-    <ParticleVortexShowcaseView
+    <ParticleVortexView
       particleLifeTimeValue={selectedParticleLifeTime}
       particleNumberValue={selectedParticleNumber}
       particleTraceWidthValue={selectedParticleTraceWidth}
@@ -33,4 +33,4 @@ const ParticleVortexShowcase: React.FC<IParticleVortexShowcase> = ({
   );
 };
 
-export default ParticleVortexShowcase;
+export default ParticleVortex;

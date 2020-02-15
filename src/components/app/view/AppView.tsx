@@ -1,6 +1,6 @@
 import React from "react";
 import { NumberParam, StringParam, useQueryParam } from "use-query-params";
-import ParticleVortexShowcase from "../../particle-vortex-showcase/container/ParticleVortexShowcase";
+import ParticleVortex from "../../particle-vortex/container/ParticleVortex";
 
 const AppView: React.FC = () => {
   const [vortexNumber] = useQueryParam("vortex-number", NumberParam);
@@ -13,7 +13,7 @@ const AppView: React.FC = () => {
   const [backgroundColor] = useQueryParam("background-color", StringParam);
 
   return (
-    <ParticleVortexShowcase
+    <ParticleVortex
       particleNumber={particleNumber}
       particleTraceWidth={particleTraceWidth}
       particleLifeTime={particleLifeTime}

@@ -1,4 +1,4 @@
-export interface IParticleVortexShowcase {
+export interface IParticleVortex {
   particleNumber: number | undefined;
   particleLifeTime: number | undefined;
   particleTraceWidth: number | undefined;
