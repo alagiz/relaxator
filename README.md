@@ -8,13 +8,20 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 [![coverage status][coverage badge]][COVERAGE_URL]
 [![license][license badge]][LICENSE_URL]
 
+## usage
+* open [http://removed/relaxator](http://removed/relaxator)
+* relax yourself
+* change parameters to see different shapes (described below)
+
 ## api
 
+### setting parameters
 parameters can be passed in using url query params:
 ```http
 http://removed/relaxator?particle-trace-width=40&vortex-number=6
 ```
 
+### supported parameters
 the following parameters are supported:
 | property            |type  |required|default    |acceptable values|description                                      |
 | --------------------|------|--------|-----------|--------|----------------------------------------------------------|
