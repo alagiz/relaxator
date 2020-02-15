@@ -11,8 +11,8 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 
 ## usage
 * open [http://removed/relaxator](http://removed/relaxator)
-* relax yourself
-* change parameters to see different shapes (described below)
+* relax yourself by looking at colorful abstractions
+* change parameters to alter the abstractions (described below)
 
 ## api
 
