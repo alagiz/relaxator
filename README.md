@@ -1,5 +1,7 @@
 # relaxator
 
+relax yourself by looking at colorful abstractions => [http://artem-alagizov.com/relaxator](http://artem-alagizov.com/relaxator)
+
 relaxator is based on [particalizor-3000](https://github.com/ArtemAlagizov/particalizor-3000)
 
 [![build status][build badge]][BUILD_URL]
