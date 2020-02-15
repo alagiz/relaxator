@@ -10,14 +10,14 @@ const ParticleVortex: React.FC<IParticleVortex> = ({
   vortexNumber,
   backgroundColor
 }) => {
-  const selectedParticleNumber = isNil(particleNumber) ? 70 : particleNumber;
+  const selectedParticleNumber = isNil(particleNumber) ? 30 : particleNumber;
   const selectedParticleTraceWidth = isNil(particleTraceWidth)
     ? 600
     : particleTraceWidth;
   const selectedParticleLifeTime = isNil(particleLifeTime)
     ? 1100
     : particleLifeTime;
-  const selectedVortexNumber = isNil(vortexNumber) ? 5 : vortexNumber;
+  const selectedVortexNumber = isNil(vortexNumber) ? 2 : vortexNumber;
   const selectedBackgroundColor = isNil(backgroundColor)
     ? "#33344c"
     : backgroundColor;
