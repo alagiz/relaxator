@@ -32,6 +32,7 @@ the following parameters are supported:
 | vortex-number       |number|no      | 3         | > 0| number of vortexes                                           |
 | background-color    |string|no      | "#33344c" | valid color string| background color, ie "red", "#333", "#333333" |
 
+## license
 
 [MIT License](LICENSE_URL)
 
