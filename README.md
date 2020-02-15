@@ -6,6 +6,7 @@ relaxator is based on [particalizor-3000](https://github.com/ArtemAlagizov/parti
 
 [![build status][build badge]][BUILD_URL]
 [![coverage status][coverage badge]][COVERAGE_URL]
+[![codacy quality status][quality badge]][QUALITY_URL]
 [![license][license badge]][LICENSE_URL]
 
 ## usage
@@ -40,3 +41,5 @@ the following parameters are supported:
 [build badge]: https://img.shields.io/travis/ArtemAlagizov/relaxator/master?style=flat-square
 [COVERAGE_URL]: https://coveralls.io/github/ArtemAlagizov/relaxator?branch=master
 [coverage badge]: https://img.shields.io/coveralls/github/ArtemAlagizov/relaxator.svg?style=flat-square&color=brightgreen
+[QUALITY_URL]: https://www.codacy.com/manual/ArtemAlagizov/relaxator
+[quality badge]: https://img.shields.io/codacy/grade/bc78b6ad64854bbebfa9da7c98943418?style=flat-square
