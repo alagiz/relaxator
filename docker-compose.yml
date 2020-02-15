@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
     command: nginx -g "daemon off;"
     ports:
-      - "8082:80"
+      - "8083:80"
