@@ -1,9 +1,9 @@
 version: '3.2'
 services:
-  particalizor-3000-vortex:
+  relaxator:
     build:
       context: .
       dockerfile: Dockerfile
     command: nginx -g "daemon off;"
     ports:
-      - "8085:80"
+      - "8082:80"

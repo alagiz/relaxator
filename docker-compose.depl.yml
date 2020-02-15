@@ -1,7 +1,7 @@
 version: '3.2'
 services:
-  particalizor-3000-vortex:
-    image: alagiz/particalizor-3000-vortex
+  relaxator:
+    image: alagiz/relaxator
     command: nginx -g "daemon off;"
     deploy:
       resources:
@@ -12,4 +12,4 @@ services:
           cpus: '0.1'
           memory: 10M
     ports:
-      - "8080:80"
+      - "8082:80"
