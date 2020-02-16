@@ -11,7 +11,7 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 
 ## usage
 * open [http://removed/relaxator](http://removed/relaxator)
-* relax yourself by looking at colorful abstractions
+* relax yourself by looking at colorful abstractions with your eyes
 * change parameters to alter the abstractions (described below)
   * interesting variations:     
     * interdimensional spin: <http://removed/relaxator?particleLifeTime=100&particleTraceWidth=250&vortexNumber=2&particleNumber=20>
