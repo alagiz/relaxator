@@ -3,31 +3,22 @@ import { mount, shallow } from "enzyme";
 import ParticleVortex from "./ParticleVortex";
 import ParticleVortexView from "../view/ParticleVortexView";
 
+jest.mock("react-router-dom");
+jest.mock("react-router", () => ({
+  useHistory: () => ({
+    push: jest.fn()
+  })
+}));
+
 describe("Given a ParticleVortex", () => {
   describe("when rendering", () => {
     it("should match snapshot", () => {
-      const component = shallow(
-        <ParticleVortex
-          backgroundColor={""}
-          particleTraceWidth={1}
-          particleNumber={1}
-          particleLifeTime={1}
-          vortexNumber={1}
-        />
-      );
+      const component = shallow(<ParticleVortex />);
 
       expect(component).toMatchSnapshot();
     });
     it("should render ParticleVortexView", () => {
-      const component = mount(
-        <ParticleVortex
-          vortexNumber={1}
-          particleLifeTime={1}
-          particleNumber={1}
-          particleTraceWidth={1}
-          backgroundColor={""}
-        />
-      );
+      const component = mount(<ParticleVortex />);
 
       expect(component.find(ParticleVortexView).length).toBe(1);
     });
