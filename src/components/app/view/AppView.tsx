@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 
 const AppView: React.FC = () => {
   return (
-    <Router>
+    <Router basename="/relaxator">
       <Route exact path="/">
         <ParticleVortex />
       </Route>
