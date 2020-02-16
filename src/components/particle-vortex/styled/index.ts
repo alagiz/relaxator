@@ -6,15 +6,20 @@ const ShowcaseComponentContainer = styled.div`
   flex: 1;
 `;
 
-const Images = styled.div`
+const MenuItemsContainer = styled.div`
+  position: absolute;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-content: center;
-  flex: 1;
+  width: 100%;
+  justify-content: flex-end;
+  color: white;
+`;
+
+const MenuItem = styled.div`
+  padding: 10px;
 `;
 
 export const Styled = {
-  Images,
+  MenuItemsContainer,
+  MenuItem,
   ShowcaseComponentContainer
 };

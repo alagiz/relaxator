@@ -2,6 +2,7 @@ import React from "react";
 import ParticleVortexView from "../view/ParticleVortexView";
 import { IParticleVortex } from "./IParticleVortex";
 import { isNil } from "ramda";
+import { useHistory } from "react-router";
 
 const ParticleVortex: React.FC<IParticleVortex> = ({
   particleNumber,
@@ -22,6 +23,13 @@ const ParticleVortex: React.FC<IParticleVortex> = ({
     ? "#33344c"
     : backgroundColor;
 
+  const history = useHistory();
+  const onShowCaseItemClick = (showCase: string) => {
+    history.push(
+      "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b"
+    );
+  };
+
   return (
     <ParticleVortexView
       particleLifeTimeValue={selectedParticleLifeTime}
@@ -29,6 +37,7 @@ const ParticleVortex: React.FC<IParticleVortex> = ({
       particleTraceWidthValue={selectedParticleTraceWidth}
       vortexNumberValue={selectedVortexNumber}
       backgroundColor={selectedBackgroundColor}
+      onShowCaseItemClick={onShowCaseItemClick}
     />
   );
 };
