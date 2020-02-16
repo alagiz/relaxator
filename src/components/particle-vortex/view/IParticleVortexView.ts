@@ -4,4 +4,5 @@ export interface IParticleVortexView {
   particleLifeTimeValue: number;
   backgroundColor: string;
   vortexNumberValue: number;
+  onShowCaseItemClick: (showCaseName: string) => void;
 }

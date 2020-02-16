@@ -9,10 +9,17 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   particleTraceWidthValue,
   particleLifeTimeValue,
   backgroundColor,
-  vortexNumberValue
+  vortexNumberValue,
+  onShowCaseItemClick
 }) => {
   return (
     <Styled.ShowcaseComponentContainer>
+      <Styled.MenuItemsContainer>
+        <Styled.MenuItem onClick={() => onShowCaseItemClick("snakeUniverse")}>
+          <div> SNAKE UNIVERSE </div>
+        </Styled.MenuItem>
+      </Styled.MenuItemsContainer>
+
       <ContainerDimensions>
         {({ height, width }) => (
           <ParticleVortex
