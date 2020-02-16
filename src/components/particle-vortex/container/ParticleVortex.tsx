@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import ParticleVortexView from "../view/ParticleVortexView";
 import { NumberParam, StringParam, useQueryParam } from "use-query-params";
 import { isNil } from "ramda";
@@ -6,6 +6,8 @@ import { useHistory } from "react-router";
 import { IShowCase } from "./IShowCase";
 
 const ParticleVortex: React.FC = () => {
+  const [isMenuVisible, setIsMenuVisible] = useState<boolean>(false);
+
   const [vortexNumber] = useQueryParam("vortexNumber", NumberParam);
   const [particleNumber] = useQueryParam("particleNumber", NumberParam);
   const [particleTraceWidth] = useQueryParam("particleTraceWidth", NumberParam);
@@ -51,6 +53,8 @@ const ParticleVortex: React.FC = () => {
   ];
 
   const history = useHistory();
+
+  const onMenuToggle = () => setIsMenuVisible(!isMenuVisible);
   const onShowCaseItemClick = (showCaseId: string) => {
     const selectedShowCase = showCases.find(
       showCase => showCase.id === showCaseId
@@ -71,6 +75,8 @@ const ParticleVortex: React.FC = () => {
       backgroundColor={selectedBackgroundColor}
       onShowCaseItemClick={onShowCaseItemClick}
       showCases={showCases}
+      isMenuVisible={isMenuVisible}
+      onMenuToggle={onMenuToggle}
     />
   );
 };

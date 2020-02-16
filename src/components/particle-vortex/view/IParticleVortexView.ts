@@ -6,6 +6,8 @@ export interface IParticleVortexView {
   particleLifeTimeValue: number;
   backgroundColor: string;
   vortexNumberValue: number;
-  onShowCaseItemClick: (showCaseName: string) => void;
   showCases: IShowCase[];
+  onShowCaseItemClick: (showCaseName: string) => void;
+  onMenuToggle: () => void;
+  isMenuVisible: boolean;
 }
