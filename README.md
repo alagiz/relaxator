@@ -24,6 +24,7 @@ parameters can be passed in using url query params:
 ```http
 http://artem-alagizov.com/relaxator?particleTraceWidth=40&vortexNumber=6
 ```
+_NOTE_: parameters can be played with here (particle vortex) => [particalizor-3000-showcase](http://artem-alagizov.com/particalizor-3000-showcase)
 
 ### supported parameters
 the following parameters are supported:
