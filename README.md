@@ -15,7 +15,7 @@ relaxator is based on [particalizor-3000](https://github.com/ArtemAlagizov/parti
 * change parameters to alter the abstractions (described below)
   * interesting variations:     
     * interdimensional spin: <http://artem-alagizov.com/relaxator?particleLifeTime=100&particleTraceWidth=250&vortexNumber=2&particleNumber=20&backgroundColor=%232b2b59>
-    * flow machine: <http://artem-alagizov.com/relaxator?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400>
+    * flow machine: <http://artem-alagizov.com/relaxator?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e>
 
 ## api
 
@@ -34,7 +34,7 @@ the following parameters are supported:
 | particleTraceWidth  |number|no      | 600       |  > 0|width of a particle trace, essentially [canvas lineWidth](https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/lineWidth)                                 |
 | particleLifeTime    |number|no      | 1100      | > 0| lifetime of a particle                                       |
 | vortexNumber        |number|no      | 3         | > 0| number of vortexes                                           |
-| backgroundColor     |string|no      | "#33344c" | valid color string| background color, ie "red", "#333", "#333333" |
+| backgroundColor     |string|no      | "#33344c" | valid color string| background color, for hex color codes **"#"** needs to be replaced with **"%23"**, valid examples => "red", "%23333", "%23333333" |
 
 ## license
 
