@@ -1,3 +1,5 @@
+import { IShowCase } from "../container/IShowCase";
+
 export interface IParticleVortexView {
   particleNumberValue: number;
   particleTraceWidthValue: number;
@@ -5,4 +7,5 @@ export interface IParticleVortexView {
   backgroundColor: string;
   vortexNumberValue: number;
   onShowCaseItemClick: (showCaseName: string) => void;
+  showCases: IShowCase[];
 }

@@ -12,6 +12,8 @@ describe("Given a ParticleVortexView", () => {
           particleLifeTimeValue={1}
           backgroundColor={"red"}
           vortexNumberValue={3}
+          onShowCaseItemClick={jest.fn()}
+          showCases={[]}
         />
       );
 
