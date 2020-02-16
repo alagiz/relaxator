@@ -13,6 +13,9 @@ relaxator is based on [particalizor-3000](https://github.com/ArtemAlagizov/parti
 * open [http://artem-alagizov.com/relaxator](http://artem-alagizov.com/relaxator)
 * relax yourself by looking at colorful abstractions
 * change parameters to alter the abstractions (described below)
+  * interesting variations:     
+    * interdimensional spin: <http://artem-alagizov.com/relaxator?particleLifeTime=100&particleTraceWidth=250&vortexNumber=2&particleNumber=20>
+    * flow machine: <http://artem-alagizov.com/relaxator?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400>
 
 ## api
 
