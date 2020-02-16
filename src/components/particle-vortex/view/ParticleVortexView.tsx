@@ -11,19 +11,25 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   backgroundColor,
   vortexNumberValue,
   onShowCaseItemClick,
+  onMenuToggle,
+  isMenuVisible,
   showCases
 }) => {
   return (
     <Styled.ShowcaseComponentContainer>
       <Styled.MenuItemsContainer>
-        {showCases.map(showCase => (
-          <Styled.MenuItem
-            key={showCase.id}
-            onClick={() => onShowCaseItemClick(showCase.id)}
-          >
-            <div> {showCase.title} </div>
-          </Styled.MenuItem>
-        ))}
+        {isMenuVisible &&
+          showCases.map(showCase => (
+            <Styled.MenuItem
+              key={showCase.id}
+              onClick={() => onShowCaseItemClick(showCase.id)}
+            >
+              <div> {showCase.title} </div>
+            </Styled.MenuItem>
+          ))}
+        <Styled.MenuToggleItem onClick={() => onMenuToggle()}>
+          <div> ▲ ▼ </div>
+        </Styled.MenuToggleItem>
       </Styled.MenuItemsContainer>
 
       <ContainerDimensions>

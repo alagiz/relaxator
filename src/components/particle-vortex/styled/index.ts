@@ -27,8 +27,19 @@ const MenuItem = styled.div`
   }
 `;
 
+const MenuToggleItem = styled.div`
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(197, 199, 196, 0.4);
+  }
+`;
+
 export const Styled = {
   MenuItemsContainer,
+  MenuToggleItem,
   MenuItem,
   ShowcaseComponentContainer
 };
