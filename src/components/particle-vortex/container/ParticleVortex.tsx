@@ -39,6 +39,12 @@ const ParticleVortex: React.FC = () => {
       title: "SNAKE UNIVERSE"
     },
     {
+      id: "galacticJam",
+      urlPath:
+        "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%231f1a38",
+      title: "GALACTIC JAM"
+    },
+    {
       id: "flowMachine",
       urlPath:
         "?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e",
