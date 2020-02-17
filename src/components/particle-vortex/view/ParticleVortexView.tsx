@@ -27,11 +27,17 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
               <div> {showCase.title} </div>
             </Styled.MenuItem>
           ))}
-        <Styled.MenuToggleItem onClick={() => onMenuToggle()}>
-          <div> ▲ ▼ </div>
-        </Styled.MenuToggleItem>
+        {isMenuVisible && (
+          <Styled.MenuToggleItem onClick={() => onMenuToggle()}>
+            <div> ▲ </div>
+          </Styled.MenuToggleItem>
+        )}
+        {!isMenuVisible && (
+          <Styled.MenuToggleItem onClick={() => onMenuToggle()}>
+            <div> ▼ </div>
+          </Styled.MenuToggleItem>
+        )}
       </Styled.MenuItemsContainer>
-
       <ContainerDimensions>
         {({ height, width }) => (
           <ParticleVortex
