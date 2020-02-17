@@ -1,7 +1,7 @@
 import React from "react";
 import { IParticleVortexView } from "./IParticleVortexView";
 import { Styled } from "../styled";
-import ContainerDimensions from "react-container-dimensions";
+import ParticleVortexOnly from "../components/ParticleVortexOnly/ParticleVortexOnly";
 
 const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   particleNumberValue,
@@ -37,19 +37,14 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
           </Styled.MenuToggleItem>
         )}
       </Styled.MenuItemsContainer>
-      <ContainerDimensions>
-        {({ height, width }) => (
-          <ParticleVortex
-            imageWidth={width}
-            imageHeight={height}
-            vortexNumber={vortexNumberValue}
-            particleTraceWidth={particleTraceWidthValue}
-            particleNumber={particleNumberValue}
-            particleLifeTime={particleLifeTimeValue}
-            backgroundColor={backgroundColor}
-          />
-        )}
-      </ContainerDimensions>
+
+      <ParticleVortexOnly
+        vortexNumberValue={vortexNumberValue}
+        particleTraceWidthValue={particleTraceWidthValue}
+        particleNumberValue={particleNumberValue}
+        particleLifeTimeValue={particleLifeTimeValue}
+        backgroundColor={backgroundColor}
+      />
     </Styled.ShowcaseComponentContainer>
   );
 };
