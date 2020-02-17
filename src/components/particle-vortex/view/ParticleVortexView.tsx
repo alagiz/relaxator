@@ -1,6 +1,5 @@
 import React from "react";
 import { IParticleVortexView } from "./IParticleVortexView";
-import { ParticleVortex } from "particalizor-3000";
 import { Styled } from "../styled";
 import ContainerDimensions from "react-container-dimensions";
 
