@@ -13,10 +13,6 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 * open [http://removed/relaxator](http://removed/relaxator)
 * relax yourself by looking at colorful abstractions with your eyes
 * change parameters to alter the abstractions (described below)
-  * interesting variations:     
-    * interdimensional spin => <http://removed/relaxator?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=20&backgroundColor=%232b2b59>
-    * flow machine => <http://removed/relaxator?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e>
-    * snake galaxy => <http://removed/relaxator?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b>
 
 ## api
 
