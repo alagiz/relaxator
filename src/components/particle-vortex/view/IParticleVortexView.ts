@@ -10,4 +10,5 @@ export interface IParticleVortexView {
   onShowCaseItemClick: (showCaseName: string) => void;
   onMenuToggle: () => void;
   isMenuVisible: boolean;
+  onGithubLinkClick: () => void;
 }

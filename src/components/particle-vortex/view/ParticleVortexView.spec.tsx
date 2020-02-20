@@ -16,6 +16,7 @@ describe("Given a ParticleVortexView", () => {
           showCases={[]}
           onMenuToggle={jest.fn()}
           isMenuVisible={false}
+          onGithubLinkClick={jest.fn()}
         />
       );
 
