@@ -18,5 +18,13 @@ exports[`Given a ParticleVortexView when rendering should match snapshot 1`] = `
     particleTraceWidthValue={1}
     vortexNumberValue={3}
   />
+  <styled.div
+    onClick={[Function]}
+  >
+    <GoMarkGithub
+      className="github-icon"
+      size="34.4px"
+    />
+  </styled.div>
 </styled.div>
 `;
