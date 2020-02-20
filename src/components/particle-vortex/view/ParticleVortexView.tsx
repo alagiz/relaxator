@@ -2,6 +2,7 @@ import React from "react";
 import { IParticleVortexView } from "./IParticleVortexView";
 import { Styled } from "../styled";
 import ParticleVortexOnly from "../components/ParticleVortexOnly/ParticleVortexOnly";
+import { GoMarkGithub } from "react-icons/go";
 
 const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   particleNumberValue,
@@ -12,7 +13,8 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
   onShowCaseItemClick,
   onMenuToggle,
   isMenuVisible,
-  showCases
+  showCases,
+  onGithubLinkClick
 }) => {
   return (
     <Styled.ShowcaseComponentContainer>
@@ -45,6 +47,9 @@ const ParticleVortexShowcaseView: React.FC<IParticleVortexView> = ({
         particleLifeTimeValue={particleLifeTimeValue}
         backgroundColor={backgroundColor}
       />
+      <Styled.GithubLinkContainer onClick={() => onGithubLinkClick()}>
+        <GoMarkGithub size={"34.4px"} className={"github-icon"} />
+      </Styled.GithubLinkContainer>
     </Styled.ShowcaseComponentContainer>
   );
 };
