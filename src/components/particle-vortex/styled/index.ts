@@ -18,6 +18,19 @@ const MenuItemsContainer = styled.div`
   background: rgb(87, 89, 93, 0.7);
 `;
 
+const GithubLinkContainer = styled.div`
+  position: absolute;
+  display: flex;
+  align-self: flex-start;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 2px;
+  width: 100%;
+  width: 38.4px;
+  color: white;
+  cursor: pointer;
+`;
+
 const MenuItem = styled.div`
   padding: 10px;
   cursor: pointer;
@@ -39,6 +52,7 @@ const MenuToggleItem = styled.div`
 
 export const Styled = {
   MenuItemsContainer,
+  GithubLinkContainer,
   MenuToggleItem,
   MenuItem,
   ShowcaseComponentContainer
