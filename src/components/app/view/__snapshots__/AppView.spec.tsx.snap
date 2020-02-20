@@ -1,3 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Given a AppView when rendering should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Given a AppView when rendering should match snapshot 1`] = `
+<BrowserRouter
+  basename="/relaxator"
+>
+  <Route
+    exact={true}
+    path="/"
+  >
+    <ParticleVortex />
+  </Route>
+</BrowserRouter>
+`;

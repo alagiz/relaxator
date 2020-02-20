@@ -1,3 +1,43 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
+<ParticleVortexShowcaseView
+  backgroundColor="#33344c"
+  isMenuVisible={false}
+  onMenuToggle={[Function]}
+  onShowCaseItemClick={[Function]}
+  particleLifeTimeValue={1100}
+  particleNumberValue={30}
+  particleTraceWidthValue={600}
+  showCases={
+    Array [
+      Object {
+        "id": "windmillOfTime",
+        "title": "WINDMILL OF TIME",
+        "urlPath": "",
+      },
+      Object {
+        "id": "flowMachine",
+        "title": "FLOW MACHINE",
+        "urlPath": "?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e",
+      },
+      Object {
+        "id": "snakeUniverse",
+        "title": "SNAKE UNIVERSE",
+        "urlPath": "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
+      },
+      Object {
+        "id": "dimensionalSpin",
+        "title": "DIMENSIONAL SPIN",
+        "urlPath": "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=20&backgroundColor=%232b2b59",
+      },
+      Object {
+        "id": "galacticJam",
+        "title": "GALACTIC JAM",
+        "urlPath": "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%2315151a",
+      },
+    ]
+  }
+  vortexNumberValue={2}
+/>
+`;
