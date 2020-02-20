@@ -4,6 +4,7 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
 <ParticleVortexShowcaseView
   backgroundColor="#33344c"
   isMenuVisible={false}
+  onGithubLinkClick={[Function]}
   onMenuToggle={[Function]}
   onShowCaseItemClick={[Function]}
   particleLifeTimeValue={1100}
