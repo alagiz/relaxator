@@ -1,3 +1,22 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Given a ParticleVortexView when rendering should match snapshot 1`] = `ShallowWrapper {}`;
+exports[`Given a ParticleVortexView when rendering should match snapshot 1`] = `
+<styled.div>
+  <styled.div>
+    <styled.div
+      onClick={[Function]}
+    >
+      <div>
+         ▼ 
+      </div>
+    </styled.div>
+  </styled.div>
+  <Memo(ParticleVortexOnly)
+    backgroundColor="red"
+    particleLifeTimeValue={1}
+    particleNumberValue={1}
+    particleTraceWidthValue={1}
+    vortexNumberValue={3}
+  />
+</styled.div>
+`;
