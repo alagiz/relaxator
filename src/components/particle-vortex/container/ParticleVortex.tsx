@@ -61,6 +61,8 @@ const ParticleVortex: React.FC = () => {
   const history = useHistory();
 
   const onMenuToggle = () => setIsMenuVisible(!isMenuVisible);
+  const onGithubLinkClick = () =>
+    (window.location.href = "https://github.com/ArtemAlagizov/relaxator");
   const onShowCaseItemClick = (showCaseId: string) => {
     const selectedShowCase = showCases.find(
       showCase => showCase.id === showCaseId
@@ -83,6 +85,7 @@ const ParticleVortex: React.FC = () => {
       showCases={showCases}
       isMenuVisible={isMenuVisible}
       onMenuToggle={onMenuToggle}
+      onGithubLinkClick={onGithubLinkClick}
     />
   );
 };
