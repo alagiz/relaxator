@@ -34,27 +34,27 @@ const ParticleVortex: React.FC = () => {
       title: "FLOW MACHINE"
     },
     {
-      id: "snakeUniverse",
-      urlPath:
-        "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
-      title: "SNAKE UNIVERSE"
-    },
-    {
-      id: "windmillOfTime",
-      urlPath: "",
-      title: "WINDMILL OF TIME"
-    },
-    {
       id: "dimensionalSpin",
       urlPath:
         "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=20&backgroundColor=%232b2b59",
       title: "DIMENSIONAL SPIN"
     },
     {
+      id: "snakeUniverse",
+      urlPath:
+        "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
+      title: "SNAKE UNIVERSE"
+    },
+    {
       id: "galacticJam",
       urlPath:
         "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%2315151a",
       title: "GALACTIC JAM"
+    },
+    {
+      id: "windmillOfTime",
+      urlPath: "",
+      title: "WINDMILL OF TIME"
     }
   ];
 
