@@ -18,24 +18,24 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
         "urlPath": "?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e",
       },
       Object {
-        "id": "snakeUniverse",
-        "title": "SNAKE UNIVERSE",
-        "urlPath": "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
-      },
-      Object {
-        "id": "windmillOfTime",
-        "title": "WINDMILL OF TIME",
-        "urlPath": "",
-      },
-      Object {
         "id": "dimensionalSpin",
         "title": "DIMENSIONAL SPIN",
         "urlPath": "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=20&backgroundColor=%232b2b59",
       },
       Object {
+        "id": "snakeUniverse",
+        "title": "SNAKE UNIVERSE",
+        "urlPath": "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
+      },
+      Object {
         "id": "galacticJam",
         "title": "GALACTIC JAM",
         "urlPath": "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%2315151a",
+      },
+      Object {
+        "id": "windmillOfTime",
+        "title": "WINDMILL OF TIME",
+        "urlPath": "",
       },
     ]
   }
