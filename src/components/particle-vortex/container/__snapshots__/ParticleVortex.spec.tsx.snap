@@ -13,11 +13,6 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
   showCases={
     Array [
       Object {
-        "id": "windmillOfTime",
-        "title": "WINDMILL OF TIME",
-        "urlPath": "",
-      },
-      Object {
         "id": "flowMachine",
         "title": "FLOW MACHINE",
         "urlPath": "?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e",
@@ -26,6 +21,11 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
         "id": "snakeUniverse",
         "title": "SNAKE UNIVERSE",
         "urlPath": "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
+      },
+      Object {
+        "id": "windmillOfTime",
+        "title": "WINDMILL OF TIME",
+        "urlPath": "",
       },
       Object {
         "id": "dimensionalSpin",

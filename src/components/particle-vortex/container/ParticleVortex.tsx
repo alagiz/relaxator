@@ -28,11 +28,6 @@ const ParticleVortex: React.FC = () => {
 
   const showCases: IShowCase[] = [
     {
-      id: "windmillOfTime",
-      urlPath: "",
-      title: "WINDMILL OF TIME"
-    },
-    {
       id: "flowMachine",
       urlPath:
         "?particleLifeTime=30&particleTraceWidth=40&vortexNumber=3&particleNumber=400&backgroundColor=%231a414e",
@@ -43,6 +38,11 @@ const ParticleVortex: React.FC = () => {
       urlPath:
         "?particleLifeTime=1000&particleTraceWidth=30&vortexNumber=3&particleNumber=200&backgroundColor=%231b293b",
       title: "SNAKE UNIVERSE"
+    },
+    {
+      id: "windmillOfTime",
+      urlPath: "",
+      title: "WINDMILL OF TIME"
     },
     {
       id: "dimensionalSpin",
