@@ -48,7 +48,7 @@ const ParticleVortex: React.FC = () => {
     {
       id: "galacticJam",
       urlPath:
-        "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%2315151a",
+        "?particleLifeTime=1000&particleTraceWidth=0.7&vortexNumber=3&particleNumber=200&backgroundColor=%2315151a",
       title: "GALACTIC JAM"
     },
     {
