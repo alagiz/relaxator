@@ -30,7 +30,7 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
       Object {
         "id": "galacticJam",
         "title": "GALACTIC JAM",
-        "urlPath": "?particleLifeTime=1000&particleTraceWidth=1&vortexNumber=3&particleNumber=300&backgroundColor=%2315151a",
+        "urlPath": "?particleLifeTime=1000&particleTraceWidth=0.7&vortexNumber=3&particleNumber=200&backgroundColor=%2315151a",
       },
       Object {
         "id": "windmillOfTime",
