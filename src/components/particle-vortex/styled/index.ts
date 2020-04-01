@@ -22,7 +22,7 @@ const GithubLinkContainer = styled.div`
   position: absolute;
   display: flex;
   align-self: flex-start;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: flex-end;
   padding: 2px;
   width: 100%;
