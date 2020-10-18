@@ -28,7 +28,7 @@ script:
       aws configure set metadata_service_num_attempts 3 &&
       aws configure list &&
       aws ssm describe-instance-information --output text &&
-      aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids $INSTANCE_ID --parameters '{"commands":['\""$RESULTING_COMMAND"\"'],"executionTimeout":["3600"]}' --timeout-seconds 600 --region $DEPLOYMENT_REGION
+      aws ssm send-command --document-name "AWS-RunShellScript" --instance-ids $INSTANCE_ID --parameters '{"commands":['\""$RESULTING_COMMAND"\"'],"executionTimeout":["3600"]}' --timeout-seconds 600 --region $DEPLOYMENT_REGION;
     fi
 #TODO: concatenating strings as in --parameters above introduces vulnerability of possible command injection, it needs to change
 after_script:
