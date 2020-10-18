@@ -33,9 +33,14 @@ exports[`Given a ParticleVortex when rendering should match snapshot 1`] = `
         "urlPath": "?particleLifeTime=1000&particleTraceWidth=0.7&vortexNumber=3&particleNumber=200&backgroundColor=%2315151a",
       },
       Object {
-        "id": "windmillOfTime",
-        "title": "WINDMILL OF TIME",
+        "id": "timeWindmill",
+        "title": "TIME WINDMILL",
         "urlPath": "",
+      },
+      Object {
+        "id": "motionOcean",
+        "title": "MOTION OCEAN",
+        "urlPath": "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=1220&backgroundColor=%232b2b59",
       },
     ]
   }
