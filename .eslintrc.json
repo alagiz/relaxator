@@ -37,6 +37,6 @@
     "@typescript-eslint/semi": ["error"],
     "@typescript-eslint/trailing-comma": "off",
     "react/prop-types": "off",
-    "prettier/prettier": ["error", {"semi": true}]
+    "prettier/prettier": ["error", {"semi": true, "trailingComma": "none"}]
   }
 }
