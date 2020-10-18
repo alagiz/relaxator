@@ -35,7 +35,7 @@ the following parameters are supported:
 
 ## license
 
-[MIT License](LICENSE_URL)
+[MIT License](https://github.com/ArtemAlagizov/relaxator/blob/master/LICENSE)
 
 [LICENSE_URL]: https://github.com/ArtemAlagizov/relaxator/blob/master/LICENSE
 [license badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&color=blue
