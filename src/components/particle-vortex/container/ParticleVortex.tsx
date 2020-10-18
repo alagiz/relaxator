@@ -52,9 +52,15 @@ const ParticleVortex: React.FC = () => {
       title: "GALACTIC JAM"
     },
     {
-      id: "windmillOfTime",
+      id: "timeWindmill",
       urlPath: "",
-      title: "WINDMILL OF TIME"
+      title: "TIME WINDMILL"
+    },    
+    {
+      id: "motionOcean",
+      urlPath:
+        "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=1220&backgroundColor=%232b2b59",
+      title: "MOTION OCEAN"
     }
   ];
 
