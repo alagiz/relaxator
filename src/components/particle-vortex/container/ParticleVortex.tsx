@@ -55,7 +55,7 @@ const ParticleVortex: React.FC = () => {
       id: "timeWindmill",
       urlPath: "",
       title: "TIME WINDMILL"
-    },    
+    },
     {
       id: "motionOcean",
       urlPath:
