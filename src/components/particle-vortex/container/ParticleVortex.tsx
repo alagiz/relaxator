@@ -61,6 +61,12 @@ const ParticleVortex: React.FC = () => {
       urlPath:
         "?particleLifeTime=100&particleTraceWidth=250&vortexNumber=4&particleNumber=1220&backgroundColor=%232b2b59",
       title: "MOTION OCEAN"
+    },
+    {
+      id: "wave13",
+      urlPath:
+        "?particleLifeTime=1000&particleTraceWidth=150&vortexNumber=4&particleNumber=13&backgroundColor=%232b2b59",
+      title: "WAVE 13"
     }
   ];
 
