@@ -33,7 +33,7 @@ the following parameters are supported:
 | vortexNumber        |number|no      | 3         | > 0| number of vortexes                                           |
 | backgroundColor     |string|no      | "#33344c" | valid color string| background color, for hex color codes **"#"** needs to be replaced with **"%23"**, valid examples => "red", "%23333", "%23333333" |
 
-## license
+## license 
 
 [MIT License](https://github.com/ArtemAlagizov/relaxator/blob/master/LICENSE)
 
