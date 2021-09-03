@@ -43,5 +43,5 @@ the following parameters are supported:
 [build badge]: https://img.shields.io/travis/alagiz/relaxator/master?style=flat-square
 [COVERAGE_URL]: https://coveralls.io/github/alagiz/relaxator?branch=master
 [coverage badge]: https://img.shields.io/coveralls/github/alagiz/relaxator.svg?style=flat-square&color=brightgreen
-[QUALITY_URL]: https://www.codacy.com/manual/alagiz/relaxator
-[quality badge]: https://img.shields.io/codacy/grade/bc78b6ad64854bbebfa9da7c98943418?style=flat-square
+[QUALITY_URL]: https://www.codacy.com/gh/alagiz/relaxator
+[quality badge]: https://img.shields.io/codacy/grade/2d206da3e6d74d09b0d0de19932b6d98?style=flat-square
