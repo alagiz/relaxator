@@ -1,6 +1,6 @@
 # relaxator
 
-relax yourself by looking at colorful abstractions => [https://removed/relaxator](https://removed/relaxator)
+relax yourself by looking at colorful abstractions => [http://removed/relaxator](http://removed/relaxator)
 
 relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor-3000)
 
@@ -10,7 +10,7 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 [![license][license badge]][LICENSE_URL]
 
 ## usage
-* open [https://removed/relaxator](http://removed/relaxator)
+* open [http://removed/relaxator](http://removed/relaxator)
 * relax yourself by looking at colorful abstractions with your eyes
 * change parameters to alter the abstractions (described below)
 
