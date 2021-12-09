@@ -18,7 +18,7 @@ relaxator is based on [particalizor-3000](https://github.com/ArtemAlagizov/parti
 
 ### setting parameters
 parameters can be passed in using url query params:
-```http
+```ифыр
 http://artem-alagizov.com/relaxator?particleTraceWidth=40&vortexNumber=6
 ```
 _NOTE_: parameters can be played with here (particle vortex) => [particalizor-3000-showcase](http://artem-alagizov.com/particalizor-3000-showcase)
