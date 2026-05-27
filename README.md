@@ -1,16 +1,13 @@
 # relaxator
 
-relax yourself by looking at colorful abstractions => [http://removed/relaxator](http://removed/relaxator)
+relax yourself by looking at colorful abstractions
 
 relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor-3000)
 
-[![build status][build badge]][BUILD_URL]
-[![coverage status][coverage badge]][COVERAGE_URL]
-[![codacy quality status][quality badge]][QUALITY_URL]
 [![license][license badge]][LICENSE_URL]
 
 ## usage
-* open [http://removed/relaxator](http://removed/relaxator)
+* run locally and open the app in the browser
 * relax yourself by looking at colorful abstractions with your eyes
 * change parameters to alter the abstractions (described below)
 
@@ -18,10 +15,9 @@ relaxator is based on [particalizor-3000](https://github.com/alagiz/particalizor
 
 ### setting parameters
 parameters can be passed in using url query params:
-```ифыр
-http://removed/relaxator?particleTraceWidth=40&vortexNumber=6
 ```
-_NOTE_: parameters can be played with here (particle vortex) => [particalizor-3000-showcase](http://removed/particalizor-3000-showcase)
+?particleTraceWidth=40&vortexNumber=6
+```
 
 ### supported parameters
 the following parameters are supported:
@@ -33,15 +29,9 @@ the following parameters are supported:
 | vortexNumber        |number|no      | 3         | > 0| number of vortexes                                           |
 | backgroundColor     |string|no      | "#33344c" | valid color string| background color, for hex color codes **"#"** needs to be replaced with **"%23"**, valid examples => "red", "%23333", "%23333333" |
 
-## license 
+## license
 
 [MIT License](https://github.com/alagiz/relaxator/blob/master/LICENSE)
 
 [LICENSE_URL]: https://github.com/alagiz/relaxator/blob/master/LICENSE
 [license badge]: https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square&color=blue
-[BUILD_URL]: https://travis-ci.org/alagiz/relaxator
-[build badge]: https://img.shields.io/travis/alagiz/relaxator/master?style=flat-square
-[COVERAGE_URL]: https://coveralls.io/github/alagiz/relaxator?branch=master
-[coverage badge]: https://img.shields.io/coveralls/github/alagiz/relaxator.svg?style=flat-square&color=brightgreen
-[QUALITY_URL]: https://www.codacy.com/gh/alagiz/relaxator
-[quality badge]: https://img.shields.io/codacy/grade/2d206da3e6d74d09b0d0de19932b6d98?style=flat-square
